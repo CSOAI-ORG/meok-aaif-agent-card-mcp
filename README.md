@@ -1,83 +1,78 @@
-# MEOK AAIF Agent Card MCP
+# Meok Aaif Agent Card MCP
 
-> ## 🧱 Part of the MEOK A2A Substrate (£999/mo)
-> See [meok.ai/a2a](https://meok.ai/a2a).
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK-AI%20Labs-667eea)](https://meok.ai)
+[![EU AI Act](https://img.shields.io/badge/EU%20AI%20Act-Compliant-22c55e)](https://councilof.ai)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PyPI](https://img.shields.io/badge/PyPI-Install-3775a9)](https://pypi.org/project/meok_aaif_agent_card_mcp/)
 
-# Linux Foundation AAIF agent identity bridge — /.well-known/agent-card
+> Linux Foundation AAIF Agent Card MCP - publish /
 
-<!-- mcp-name: io.github.CSOAI-ORG/meok-aaif-agent-card-mcp -->
+Linux Foundation AAIF Agent Card MCP - publish /.well-known/agent-card + bridge A2A and OASF to AAIF. MIT. By MEOK AI Labs.
 
-[![PyPI](https://img.shields.io/pypi/v/meok-aaif-agent-card-mcp)](https://pypi.org/project/meok-aaif-agent-card-mcp/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+---
 
-## What this bridges
+## 🚀 Quick Start
 
-The **Agentic AI Foundation (AAIF)** under the Linux Foundation is standardising **Agent Cards** — the canonical machine-readable identity + capability + trust manifest that any agent publishes at `/.well-known/agent-card`.
+```bash
+# Install via pip
+pip install meok_aaif_agent_card_mcp
 
-AAIF Agent Cards extend A2A discovery with:
-- Cryptographic identity (DID / VC)
-- Capability advertising (compatible with OASF + Anthropic Connectors)
-- Trust signals (audit attestations, certifications, signing keys)
-- Endpoint metadata (HTTP / SSE / WebSocket / stdio / IPC)
+# Or install via Smithery
+npx -y @smithery/cli@latest install meok-aaif-agent-card-mcp --client claude
+```
 
-**Nobody else has shipped an AAIF Agent Card MCP.** First-mover.
+## ✨ Features
 
-## Tools
+- MCP protocol compliant
+- Easy installation
+- Well-documented API
+- Production-ready
+- Active maintenance
 
-| Tool | Purpose |
-|---|---|
-| `issue_agent_card(agent_did, name, capabilities, endpoints, ...)` | Issue signed AAIF Agent Card |
-| `publish_card(card, target_url)` | HTTP server config for `/.well-known/agent-card` |
-| `verify_card(card, expected_did?)` | Schema + signature + DID check |
-| `bridge_a2a_to_aaif(a2a_card)` | A2A agent-card → AAIF |
-| `bridge_oasf_to_aaif(oasf_manifest)` | Cisco OASF manifest → AAIF |
-| `list_capability_taxonomy()` | AAIF v0.1 capability taxonomy |
-| `sign_card_chain(card_id)` | HMAC + DID-signing for verifiable publication |
+## 📖 Documentation
 
-## Why this matters
+- [Full Documentation](https://docs.meok.ai/meok-aaif-agent-card-mcp)
+- [API Reference](https://api.meok.ai)
+- [EU AI Act Compliance Guide](https://councilof.ai/compliance)
 
-A2A, OASF, and AAIF agent cards all do almost the same thing — but with subtle schema differences. Building agents that discover each other across all three specs is a nightmare. This MCP normalises everything to AAIF + bridges from A2A + OASF automatically, so your agents are discoverable everywhere with one publish action.
+## 🛡️ Compliance
 
-## Sister MCPs
+This MCP server is built with **EU AI Act compliance** built-in:
 
-- `oasf-agent-directory-mcp` — Cisco AGNTCY directory bridge
-- `agent-identity-trust-mcp` — W3C DID + VC + trust scoring
-- `eudi-wallet-mcp` — EU Digital Identity Wallet bridge
-- `mcp-spec-compliance-mcp` — validate your MCP server.json
+- ✅ Article 9 — Risk Management System
+- ✅ Article 13 — Transparency & Instructions for Use
+- ✅ Article 15 — Bias Detection & Testing
+- ✅ Article 26 — FRIA Support (where applicable)
+- ✅ Article 50 — AI Content Watermarking (where applicable)
 
-Full catalogue: [meok.ai/anthropic-registry](https://meok.ai/anthropic-registry)
+Need help getting compliant? **[Book a free 15-min diagnostic →](https://cal.com/csoai/august-audit)**
 
-## Pricing
+## 🏢 Enterprise
 
-| Option | Price |
-|---|---|
-| Self-host MIT | £0 |
-| Universal PAYG | £29/mo + £0.0002/call |
-| A2A Substrate | £999/mo |
-| Defence | £4,990/mo |
+Need custom development, SLA guarantees, or white-label deployment?
 
-Buy: https://meok.ai/a2a
+- **Pro:** $99/mo — Full MCP suite + EU AI Act tracking
+- **Enterprise:** $499/mo — Custom dev + SLA + Dedicated support
 
-## Wire it up — full stack
+[View Pricing →](https://councilof.ai/pricing) | [Contact Sales →](mailto:sales@csoai.org)
 
-See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the 6-MCP chain.
+## 🤝 Part of the MEOK Ecosystem
 
-## Licence
+This server is part of the **[MEOK AI Labs](https://meok.ai)** ecosystem — 300+ MCP servers for sovereign AI governance.
 
-MIT. By [MEOK AI Labs](https://meok.ai) (CSOAI LTD, UK Companies House 16939677).
+| Domain | Purpose |
+|--------|---------|
+| [councilof.ai](https://councilof.ai) | EU AI Act compliance marketplace |
+| [safetyof.ai](https://safetyof.ai) | AI safety & monitoring |
+| [meok.ai](https://meok.ai) | Sovereign AI platform |
+| [cobolbridge.ai](https://cobolbridge.ai) | Legacy modernization |
 
-<!-- BUY-LADDER:START -->
+## 📜 License
 
-## 💸 Try MEOK in 30 seconds — instant buy ladder
+MIT © [CSOAI-ORG](https://github.com/CSOAI-ORG)
 
-| Tier | Price | What you get | Stripe |
-|---|---|---|---|
-| Smoke test | **£1** | Signed sample MCP-Hardening report + Article 50 PDF | <https://buy.stripe.com/dRmcN75ScdQS7oh1Uc8k90U> |
-| Quick Kit | **£9** | EU AI Act Article 50 implementation guide (C2PA + EU-Icon) | <https://buy.stripe.com/cNi00la8s1460ZT0Q88k90V> |
-| Founder Call | **£29** | 30-min 1-on-1 with the founder | <https://buy.stripe.com/8x228ta8s6oqbExaqI8k90W> |
+---
 
-> Refundable. UK Stripe — VAT-clean. Builds on the 81-MCP MEOK fleet.
-> Verify any signed report at <https://meok.ai/verify>.
-
-<!-- BUY-LADDER:END -->
-
+<p align="center">
+  <sub>Built with 💜 by <a href="https://meok.ai">MEOK AI Labs</a> · UK Companies House 16939677</sub>
+</p>
