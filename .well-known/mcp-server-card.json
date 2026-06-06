@@ -1,0 +1,34 @@
+{
+  "name": "meok-aaif-agent-card-mcp",
+  "title": "Meok Aaif Agent Card Mcp",
+  "description": "MEOK AAIF Agent Card MCP \u2014 Linux Foundation AAIF agent identity bridge. Issues + verifies + publishes /.well-known/agent-card. Bridges A2A and OASF to AAIF. First-mover for the AAIF identity spec. By MEOK AI Labs.",
+  "version": "1.0.1",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "issue_agent_card"
+    },
+    {
+      "name": "publish_card"
+    },
+    {
+      "name": "verify_card"
+    },
+    {
+      "name": "bridge_a2a_to_aaif"
+    },
+    {
+      "name": "bridge_oasf_to_aaif"
+    },
+    {
+      "name": "list_capability_taxonomy"
+    },
+    {
+      "name": "sign_card_chain"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# meok-aaif-agent-card-mcp
+
+> MEOK AAIF Agent Card MCP — Linux Foundation AAIF agent identity bridge. Issues + verifies + publishes /.well-known/agent-card. Bridges A2A and OASF to AAIF. First-mover for the AAIF identity spec. By MEOK AI Labs.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- issue_agent_card
+- publish_card
+- verify_card
+- bridge_a2a_to_aaif
+- bridge_oasf_to_aaif
+- list_capability_taxonomy
+- sign_card_chain
+
+## Install
+```
+pip install meok-aaif-agent-card-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/meok-aaif-agent-card-mcp/
+- Docs: https://meok.ai
