@@ -1,0 +1,86 @@
+{
+  "name": "meok-aaif-agent-card-mcp",
+  "description": "MEOK AAIF Agent Card MCP \u2014 Linux Foundation AAIF agent identity bridge. Issues + verifies +",
+  "url": "https://proofof.ai/scorecard/meok-aaif-agent-card-mcp.html",
+  "version": "1.0.1",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "issue_agent_card",
+      "name": "Issue Agent Card",
+      "description": "issue_agent_card via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "publish_card",
+      "name": "Publish Card",
+      "description": "publish_card via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "verify_card",
+      "name": "Verify Card",
+      "description": "verify_card via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "bridge_a2a_to_aaif",
+      "name": "Bridge A2A To Aaif",
+      "description": "bridge_a2a_to_aaif via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "bridge_oasf_to_aaif",
+      "name": "Bridge Oasf To Aaif",
+      "description": "bridge_oasf_to_aaif via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_capability_taxonomy",
+      "name": "List Capability Taxonomy",
+      "description": "list_capability_taxonomy via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "sign_card_chain",
+      "name": "Sign Card Chain",
+      "description": "sign_card_chain via meok-aaif-agent-card-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
