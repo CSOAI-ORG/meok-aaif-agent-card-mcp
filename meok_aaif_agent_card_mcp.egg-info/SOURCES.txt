@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+server.py
+meok_aaif_agent_card_mcp.egg-info/PKG-INFO
+meok_aaif_agent_card_mcp.egg-info/SOURCES.txt
+meok_aaif_agent_card_mcp.egg-info/dependency_links.txt
+meok_aaif_agent_card_mcp.egg-info/entry_points.txt
+meok_aaif_agent_card_mcp.egg-info/requires.txt
+meok_aaif_agent_card_mcp.egg-info/top_level.txt
+tests/test_aaif.py
