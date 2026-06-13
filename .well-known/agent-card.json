@@ -1,0 +1,151 @@
+{
+  "name": "Meok Aaif Agent Card Mcp",
+  "version": "1.0.1",
+  "url": "https://mcp.meok.ai/meok-aaif-agent-card-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MEOK AAIF Agent Card MCP — Linux Foundation AAIF agent identity bridge. Issues + verifies + publishes /.well-known/agent-card. Bridges A2A and OASF to AAIF. First-mover for the AAIF identity spec. By MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "issue_agent_card",
+      "name": "Issue Agent Card",
+      "description": "Issue Agent Card — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "publish_card",
+      "name": "Publish Card",
+      "description": "Publish Card — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "verify_card",
+      "name": "Verify Card",
+      "description": "Verify Card — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "bridge_a2a_to_aaif",
+      "name": "Bridge A2A To Aaif",
+      "description": "Bridge A2A To Aaif — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "bridge_oasf_to_aaif",
+      "name": "Bridge Oasf To Aaif",
+      "description": "Bridge Oasf To Aaif — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_capability_taxonomy",
+      "name": "List Capability Taxonomy",
+      "description": "List Capability Taxonomy — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "sign_card_chain",
+      "name": "Sign Card Chain",
+      "description": "Sign Card Chain — a tool of the meok-aaif-agent-card-mcp MCP.",
+      "tags": [
+        "agent",
+        "a2a"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "meok-aaif-agent-card-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
