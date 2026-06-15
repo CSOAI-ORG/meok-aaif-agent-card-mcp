@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "meok-aaif-agent-card-mcp"
-version = "1.0.2"
+version = "1.0.3"
 description = "MEOK AAIF Agent Card MCP — Linux Foundation AAIF agent identity bridge. Issues + verifies + publishes /.well-known/agent-card. Bridges A2A and OASF to AAIF. First-mover for the AAIF identity spec. By MEOK AI Labs."
 readme = "README.md"
 license = { text = "MIT" }
@@ -27,3 +27,22 @@ meok-aaif-agent-card-mcp = "server:main"
 
 [tool.setuptools]
 py-modules = ["server"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_Configs = true
+disallow_untyped_defs = true
+

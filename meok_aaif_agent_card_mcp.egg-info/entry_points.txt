@@ -1,2 +1,0 @@
-[console_scripts]
-meok-aaif-agent-card-mcp = server:main
